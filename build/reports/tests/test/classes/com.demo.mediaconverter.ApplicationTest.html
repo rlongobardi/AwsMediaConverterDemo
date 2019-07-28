@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.demo.mediaconverter.ApplicationTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.demo.mediaconverter.ApplicationTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.demo.mediaconverter.html">com.demo.mediaconverter</a> &gt; ApplicationTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.051s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">contextLoads</td>
+<td class="success">0.051s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.0.1.RELEASE)
+
+2019-07-28 15:11:25.794  INFO 10950 --- [    Test worker] com.demo.mediaconverter.ApplicationTest  : Starting ApplicationTest on Rosarios-MacBook-Pro.local with PID 10950 (started by rlongobardi in /Users/rlongobardi/Development/AwsMediaConverterDemo)
+2019-07-28 15:11:25.796  INFO 10950 --- [    Test worker] com.demo.mediaconverter.ApplicationTest  : No active profile set, falling back to default profiles: default
+2019-07-28 15:11:25.832  INFO 10950 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@30ee6e6d: startup date [Sun Jul 28 15:11:25 BST 2019]; root of context hierarchy
+2019-07-28 15:11:27.100  INFO 10950 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-28 15:11:27.268  INFO 10950 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@30ee6e6d: startup date [Sun Jul 28 15:11:25 BST 2019]; root of context hierarchy
+2019-07-28 15:11:27.319  INFO 10950 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/api/mediaconvert/getJobs],methods=[GET]}&quot; onto public java.lang.String com.demo.mediaconverter.controllers.MediaConvertController.getJobList()
+2019-07-28 15:11:27.319  INFO 10950 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/api/mediaconvert/startTranscodeJob],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity com.demo.mediaconverter.controllers.MediaConvertController.mediaTranscodeJob(java.lang.String,java.lang.String) throws java.lang.Exception
+2019-07-28 15:11:27.320  INFO 10950 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/api/mediaconvert/assets/upload],methods=[POST]}&quot; onto public java.util.List&lt;com.amazonaws.services.s3.model.PutObjectResult&gt; com.demo.mediaconverter.controllers.S3MediaController.uploadAssets(org.springframework.web.multipart.MultipartFile[])
+2019-07-28 15:11:27.321  INFO 10950 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/api/mediaconvert/assets/download],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity&lt;byte[]&gt; com.demo.mediaconverter.controllers.S3MediaController.downloadAssets(java.lang.String) throws java.io.IOException
+2019-07-28 15:11:27.321  INFO 10950 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/api/mediaconvert/assets/list],methods=[GET]}&quot; onto public java.util.List&lt;java.lang.String&gt; com.demo.mediaconverter.controllers.S3MediaController.listAssets() throws java.io.IOException
+2019-07-28 15:11:27.324  INFO 10950 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-28 15:11:27.325  INFO 10950 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-28 15:11:27.344  INFO 10950 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-28 15:11:27.344  INFO 10950 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-28 15:11:27.460  INFO 10950 --- [    Test worker] com.demo.mediaconverter.ApplicationTest  : Started ApplicationTest in 6.91 seconds (JVM running for 7.674)
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Jul 28, 2019 3:11:20 PM org.springframework.boot.test.context.SpringBootTestContextBootstrapper buildDefaultMergedContextConfiguration
+INFO: Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.demo.mediaconverter.ApplicationTest], using SpringBootContextLoader
+Jul 28, 2019 3:11:20 PM org.springframework.test.context.support.AbstractContextLoader generateDefaultLocations
+INFO: Could not detect default resource locations for test class [com.demo.mediaconverter.ApplicationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+Jul 28, 2019 3:11:20 PM org.springframework.test.context.support.AnnotationConfigContextLoaderUtils detectDefaultConfigurationClasses
+INFO: Could not detect default configuration classes for test class [com.demo.mediaconverter.ApplicationTest]: ApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+Jul 28, 2019 3:11:20 PM org.springframework.boot.test.context.SpringBootTestContextBootstrapper getOrFindConfigurationClasses
+INFO: Found @SpringBootConfiguration com.demo.mediaconverter.Application for test class com.demo.mediaconverter.ApplicationTest
+Jul 28, 2019 3:11:20 PM org.springframework.boot.test.context.SpringBootTestContextBootstrapper getDefaultTestExecutionListenerClassNames
+INFO: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+Jul 28, 2019 3:11:20 PM org.springframework.boot.test.context.SpringBootTestContextBootstrapper getTestExecutionListeners
+INFO: Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5307dcdf, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@18e065fe, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@20e0105b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5aca7a66, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3746b4c4, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2c92e847, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@cd04746, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5c015f0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7226118, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3c49616b]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.5.1</a> at 28 Jul 2019, 15:11:27</p>
+</div>
+</div>
+</body>
+</html>

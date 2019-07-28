@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.demo.mediaconverter.ApplicationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-07-28T14:11:27" hostname="Rosarios-MacBook-Pro.local" time="0.051">
+  <properties/>
+  <testcase name="contextLoads" classname="com.demo.mediaconverter.ApplicationTest" time="0.051"/>
+  <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.0.1.RELEASE)
+
+2019-07-28 15:11:25.794  INFO 10950 --- [    Test worker] com.demo.mediaconverter.ApplicationTest  : Starting ApplicationTest on Rosarios-MacBook-Pro.local with PID 10950 (started by rlongobardi in /Users/rlongobardi/Development/AwsMediaConverterDemo)
+2019-07-28 15:11:25.796  INFO 10950 --- [    Test worker] com.demo.mediaconverter.ApplicationTest  : No active profile set, falling back to default profiles: default
+2019-07-28 15:11:25.832  INFO 10950 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@30ee6e6d: startup date [Sun Jul 28 15:11:25 BST 2019]; root of context hierarchy
+2019-07-28 15:11:27.100  INFO 10950 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-28 15:11:27.268  INFO 10950 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@30ee6e6d: startup date [Sun Jul 28 15:11:25 BST 2019]; root of context hierarchy
+2019-07-28 15:11:27.319  INFO 10950 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/mediaconvert/getJobs],methods=[GET]}" onto public java.lang.String com.demo.mediaconverter.controllers.MediaConvertController.getJobList()
+2019-07-28 15:11:27.319  INFO 10950 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/mediaconvert/startTranscodeJob],methods=[GET]}" onto public org.springframework.http.ResponseEntity com.demo.mediaconverter.controllers.MediaConvertController.mediaTranscodeJob(java.lang.String,java.lang.String) throws java.lang.Exception
+2019-07-28 15:11:27.320  INFO 10950 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/mediaconvert/assets/upload],methods=[POST]}" onto public java.util.List<com.amazonaws.services.s3.model.PutObjectResult> com.demo.mediaconverter.controllers.S3MediaController.uploadAssets(org.springframework.web.multipart.MultipartFile[])
+2019-07-28 15:11:27.321  INFO 10950 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/mediaconvert/assets/download],methods=[GET]}" onto public org.springframework.http.ResponseEntity<byte[]> com.demo.mediaconverter.controllers.S3MediaController.downloadAssets(java.lang.String) throws java.io.IOException
+2019-07-28 15:11:27.321  INFO 10950 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/mediaconvert/assets/list],methods=[GET]}" onto public java.util.List<java.lang.String> com.demo.mediaconverter.controllers.S3MediaController.listAssets() throws java.io.IOException
+2019-07-28 15:11:27.324  INFO 10950 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-28 15:11:27.325  INFO 10950 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-28 15:11:27.344  INFO 10950 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-28 15:11:27.344  INFO 10950 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-28 15:11:27.460  INFO 10950 --- [    Test worker] com.demo.mediaconverter.ApplicationTest  : Started ApplicationTest in 6.91 seconds (JVM running for 7.674)
+]]></system-out>
+  <system-err><![CDATA[Jul 28, 2019 3:11:20 PM org.springframework.boot.test.context.SpringBootTestContextBootstrapper buildDefaultMergedContextConfiguration
+INFO: Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.demo.mediaconverter.ApplicationTest], using SpringBootContextLoader
+Jul 28, 2019 3:11:20 PM org.springframework.test.context.support.AbstractContextLoader generateDefaultLocations
+INFO: Could not detect default resource locations for test class [com.demo.mediaconverter.ApplicationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+Jul 28, 2019 3:11:20 PM org.springframework.test.context.support.AnnotationConfigContextLoaderUtils detectDefaultConfigurationClasses
+INFO: Could not detect default configuration classes for test class [com.demo.mediaconverter.ApplicationTest]: ApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+Jul 28, 2019 3:11:20 PM org.springframework.boot.test.context.SpringBootTestContextBootstrapper getOrFindConfigurationClasses
+INFO: Found @SpringBootConfiguration com.demo.mediaconverter.Application for test class com.demo.mediaconverter.ApplicationTest
+Jul 28, 2019 3:11:20 PM org.springframework.boot.test.context.SpringBootTestContextBootstrapper getDefaultTestExecutionListenerClassNames
+INFO: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+Jul 28, 2019 3:11:20 PM org.springframework.boot.test.context.SpringBootTestContextBootstrapper getTestExecutionListeners
+INFO: Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5307dcdf, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@18e065fe, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@20e0105b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5aca7a66, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3746b4c4, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2c92e847, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@cd04746, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5c015f0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7226118, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3c49616b]
+]]></system-err>
+</testsuite>

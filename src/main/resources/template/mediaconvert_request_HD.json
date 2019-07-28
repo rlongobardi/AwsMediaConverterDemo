@@ -1,0 +1,40 @@
+{
+  "outputGroups": [
+    {
+      "customName": "Output Group Settings Default",
+      "name": "File Group",
+      "outputs": [
+        {
+          "preset": "System-Generic_Hd_Mp4_Avc_Aac_16x9_1920x1080p_60Hz_9Mbps",
+          "extension": "mp4"
+        }
+      ],
+      "outputGroupSettings": {
+        "type": "FILE_GROUP_SETTINGS",
+        "fileGroupSettings": {
+          "destination": "s3://destinationBucket/folder"
+        }
+      }
+    }
+  ],
+  "adAvailOffset": 0,
+  "inputs": [
+    {
+      "audioSelectors": {
+        "Audio Selector 1": {
+          "offset": 0,
+          "defaultSelection": "DEFAULT",
+          "selectorType": "TRACK",
+          "programSelection": 1
+        }
+      },
+      "filterEnable": "AUTO",
+      "psiControl": "USE_PSI",
+      "filterStrength": 0,
+      "deblockFilter": "DISABLED",
+      "denoiseFilter": "DISABLED",
+      "timecodeSource": "EMBEDDED",
+      "fileInput": "s3://sourceBucket/demofile.mp4"
+    }
+  ]
+}
